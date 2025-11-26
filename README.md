@@ -1,17 +1,13 @@
-# SpectralTemporal-NS
+# iDNS — Intelligent Adaptive Policy for Navier–Stokes
 
-**Red Dawn AI Lab – Jeffrey Camlin (2025)**
+**Red Dawn AI Lab — Jeffrey Camlin (2025)**
 
-Deterministic spectral–temporal framework combining Fourier spectral continuation and temporal lifting to achieve smooth global solutions of the incompressible Navier–Stokes equations on the periodic torus $\mathbb{T}^3$. Implements the **XXXX solver** for adaptive time-lifted stability, spectral damping, and benchmark validation.
+iDNS is a deterministic adaptive-control framework for stable, high–Reynolds number 
+integration of the incompressible Navier–Stokes equations on periodic domains, combining
+Fourier spectral methods with geometric temporal lifting to prevent CFL-induced timestep collapse.
 
----
-
-## 🔹 Key Features
-
-* Deterministic spectral continuation operator $\mathcal{C}_\zeta$ for smooth restarts.
-* Temporal lifting $t \mapsto \tau(t)$ for adaptive reparametrization.
-* Validation against Kolmogorov and Taylor–Green flow benchmarks.
-* Reproducible numerical reports auto-generated under `reports/`.
+This repository provides the minimal research reference implementation used for
+benchmark validation in the iDNS papers. 
 
 ---
 
@@ -22,24 +18,6 @@ Deterministic spectral–temporal framework combining Fourier spectral continuat
 | **Temporal Lifting as Latent-Space Regularization** | Adaptive time-scaling for latent and PDE models. | [📄 PDF](Temporal_Lift-AI-CS-stamped.pdf) | [🔗 doi.org/10.48550/arXiv.2510.09805](https://doi.org/10.48550/arXiv.2510.09805) |
 | **Neural-Inspired Spectral–Temporal Continuation** | Unified SC + TL global smoothness construction. | [📄 PDF](arxiv-stamp-Neural-Inspired%20Spectral-Temporal.pdf) | [🔗 recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html](https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html) |
 | **XXXX: Intelligent Direct Numerical Simulation** | Validation paper with benchmark results at Re up to 10⁸. | [📄 PDF](XXXX_validation_paper.pdf) | [🔗 arXiv](https://arxiv.org) |
-
----
-
-## 🔹 Benchmarks
-
-* **2D Kolmogorov Flow** — Re = 20,000 to 10⁸
-* **3D Taylor–Green Vortex** — Re = 1,600 to 10⁵
-* **XXXX Lift-Stability Tests** — adaptive φ′(τ) ramp
-
----
-
-## 🔹 Usage
-
-```bash
-conda env create -f environment.yml
-conda activate spectral-temporal
-python src/sentinel_kolmogorov_v3.py
-```
 
 ---
 
