@@ -70,6 +70,8 @@ where φ'(τ) is determined by a sigmoid controller responding to local flow sti
 
 ## Files
 
+## All solvers are in iDNS_public.zip
+
 ### `idns_v1_public_kolmogorov.py`
 **2D Kolmogorov Flow Solver** — Regimes I, II, IV
 
