@@ -1,5 +1,5 @@
 # iDNS — Intelligent Adaptive Policy Solver for Navier–Stokes
-[![DOI](https://zenodo.org/badge/1089748208.svg)](https://doi.org/10.5281/zenodo.17730872)
+[![DOI](https://zenodo.org/badge/1089748208.svg)](https://doi.org/10.5281/zenodo.17730872) 10.5281/zenodo.17730872
 
 #iDNS Minimal Kolmogorov / Taylor-Green Flow Solver — Public Release
 # ----------------------------------------------------
