@@ -235,52 +235,69 @@ CC BY-NC 4.0 (Attribution-NonCommercial)
 This software is provided for scientific and academic reproducibility. Commercial use requires separate licensing — contact reddawnacademicpress.org.
 
 ---
-
-## Author
-
-**Jeffrey Camlin**  
-Red Dawn Academic Press & AI Lab  
-Milwaukee, WI
-
-© 2025 Red Dawn Academic Press
-
----
-
-## Citation
-
-If you use this repository, cite the corresponding paper:
-
-Camlin, J. (2025). *iDNS: Intelligent Adaptive Policy for Navier–Stokes.*  
-Red Dawn Academic Press.
-
-
-
----
-
-## 🔹 Reference Papers
-
-| Paper | Description | Local PDF | Online Link |
-|:--|:--|:--|:--|
-| **Temporal Lifting as Latent-Space Regularization** | Adaptive time-scaling for latent and PDE models. | [📄 PDF](Temporal_Lift-AI-CS-stamped.pdf) | [🔗 doi.org/10.48550/arXiv.2510.09805](https://doi.org/10.48550/arXiv.2510.09805) |
-| **Neural-Inspired Spectral–Temporal Continuation** | Unified SC + TL global smoothness construction. | [📄 PDF](arxiv-stamp-Neural-Inspired%20Spectral-Temporal.pdf) | [🔗 recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html](https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html) |
-| **XXXX: Intelligent Direct Numerical Simulation** | Validation paper with benchmark results at Re up to 10⁸. | [📄 PDF](XXXX_validation_paper.pdf) | [🔗 arXiv](https://arxiv.org) |
+## 🔹 Reference Papers (Theory, Math, and Computer Science)
 
 ---
 
 ## 🔹 Citation
 
-If you reference this work, please cite as follows (APA 7th edition):
+⭐ 📚 Citation Block (3 Papers — For README / GitHub / Papers)
+1. Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow Models in AI Systems
 
-> Camlin, J. (2025). *SpectralTemporal-NS: Neural-Inspired Spectral–Temporal Continuation for Smooth Global Navier–Stokes Solutions on T³.*  
-> Red Dawn Academic Press, Milwaukee, WI.  
-> https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html  
-> ORCID 0000-0002-5740-4204
+Jeffrey Camlin (2025)
+arXiv preprint arXiv:2510.09805
+Published: 10 October 2025
+ORCID: 0000-0002-5740-4204
+➡️ https://arxiv.org/abs/2510.09805
+ (placeholder until PDF goes live)
 
+Temporal lifting introduces a smooth, monotone reparametrization of time that regularizes stiff flows while preserving conservation laws. In the lifted coordinate, trajectories of systems such as incompressible Navier–Stokes on T3
+ become globally smooth. For AI systems, temporal lifting acts as continuous-time normalization for PINNs, neural ODEs, and latent-flow architectures, stabilizing turbulent or near-singular evolution.
+
+2. iDNS: Intelligent Regularity-Adaptive Spectral Integration (RASI) Policy for Deterministic Flow Dynamics (forthcoming arXiv)
+
+Jeffrey Camlin (2025)
+Published: 27 November 2025
+PhilPapers ID: CAMIIA-3
+ORCID: 0000-0002-5740-4204
+➡️ https://philpapers.org/archive/CAMIIA-3.pdf
+
+iDNS (RASI Policy) provides a deterministic spectral–temporal integration method capable of evolving high–Reynolds number flows with globally smooth lifted trajectories. The method merges spectral continuation, temporal lifting, and stability-aware timestep negotiation to produce Reynolds-invariant computational cost for stiff fluid systems.
+
+3. SpectralTemporal-NS: Neural-Inspired Spectral–Temporal Continuation for Smooth Global Navier–Stokes Solutions on T³
+
+Jeffrey Camlin (2025)
+Red Dawn Academic Press, Milwaukee, WI
+Publication Date: 2025
+ORCID: 0000-0002-5740-4204
+➡️ https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html
+
+This paper introduces a neural-inspired spectral–temporal continuation method for the incompressible Navier–Stokes equations on the torus. By combining lifted-time operators with adaptive spectral filtering, the solver achieves smooth global trajectories even at extreme Reynolds numbers. The method bridges analytic fluid regularity theory with continuous-time machine learning architectures and PINN-style latent dynamics.
 ---
 
-**BibTeX**
+@article{Camlin2025_TemporalLifting,
+  author        = {Camlin, Jeffrey},
+  title         = {Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow Models in AI Systems},
+  journal       = {arXiv preprint},
+  eprint        = {2510.09805},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  year          = {2025},
+  month         = oct,
+  orcid         = {0000-0002-5740-4204},
+  url           = {https://arxiv.org/abs/2510.09805}
+}
 
-```bibtex
+@article{Camlin2025_iDNS_RASI,
+  author        = {Camlin, Jeffrey},
+  title         = {iDNS: Intelligent Regularity-Adaptive Spectral Integration (RASI) Policy for Deterministic Flow Dynamics},
+  journal       = {PhilPapers Archive},
+  year          = {2025},
+  month         = nov,
+  url           = {https://philpapers.org/archive/CAMIIA-3.pdf},
+  orcid         = {0000-0002-5740-4204}
+}
+
 @article{Camlin2025_SpectralTemporalNS,
   author    = {Camlin, Jeffrey},
   year      = {2025},
@@ -290,7 +307,6 @@ If you reference this work, please cite as follows (APA 7th edition):
   url       = {https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html},
   orcid     = {0000-0002-5740-4204}
 }
-```
 
 ---
 ## License
