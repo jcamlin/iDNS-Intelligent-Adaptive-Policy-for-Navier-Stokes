@@ -242,17 +242,6 @@ This software is provided for scientific and academic reproducibility. Commercia
 ## 🔹 Citation
 
 ⭐ 📚 Citation Block (3 Papers — For README / GitHub / Papers)
-1. Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow Models in AI Systems
-
-Jeffrey Camlin (2025)
-arXiv preprint arXiv:2510.09805
-Published: 10 October 2025
-ORCID: 0000-0002-5740-4204
-➡️ https://arxiv.org/abs/2510.09805
- (placeholder until PDF goes live)
-
-Temporal lifting introduces a smooth, monotone reparametrization of time that regularizes stiff flows while preserving conservation laws. In the lifted coordinate, trajectories of systems such as incompressible Navier–Stokes on T3
- become globally smooth. For AI systems, temporal lifting acts as continuous-time normalization for PINNs, neural ODEs, and latent-flow architectures, stabilizing turbulent or near-singular evolution.
 
 2. iDNS: Intelligent Regularity-Adaptive Spectral Integration (RASI) Policy for Deterministic Flow Dynamics (forthcoming arXiv)
 
@@ -264,6 +253,19 @@ ORCID: 0000-0002-5740-4204
 
 iDNS (RASI Policy) provides a deterministic spectral–temporal integration method capable of evolving high–Reynolds number flows with globally smooth lifted trajectories. The method merges spectral continuation, temporal lifting, and stability-aware timestep negotiation to produce Reynolds-invariant computational cost for stiff fluid systems.
 
+Theory Papers
+
+1. Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow Models in AI Systems
+
+Jeffrey Camlin (2025)
+arXiv preprint arXiv:2510.09805
+Published: 10 October 2025
+ORCID: 0000-0002-5740-4204
+➡️ https://arxiv.org/abs/2510.09805
+
+Temporal lifting introduces a smooth, monotone reparametrization of time that regularizes stiff flows while preserving conservation laws. In the lifted coordinate, trajectories of systems such as incompressible Navier–Stokes on T3
+ become globally smooth. For AI systems, temporal lifting acts as continuous-time normalization for PINNs, neural ODEs, and latent-flow architectures, stabilizing turbulent or near-singular evolution.
+
 3. SpectralTemporal-NS: Neural-Inspired Spectral–Temporal Continuation for Smooth Global Navier–Stokes Solutions on T³
 
 Jeffrey Camlin (2025)
@@ -273,6 +275,7 @@ ORCID: 0000-0002-5740-4204
 ➡️ https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html
 
 This paper introduces a neural-inspired spectral–temporal continuation method for the incompressible Navier–Stokes equations on the torus. By combining lifted-time operators with adaptive spectral filtering, the solver achieves smooth global trajectories even at extreme Reynolds numbers. The method bridges analytic fluid regularity theory with continuous-time machine learning architectures and PINN-style latent dynamics.
+
 ---
 
 @article{Camlin2025_TemporalLifting,
