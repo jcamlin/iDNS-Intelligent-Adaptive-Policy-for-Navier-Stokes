@@ -13,6 +13,7 @@
 </p>
 
 # iDNS — Intelligent Adaptive Policy Solver for Navier–Stokes
+➡️ [![Paper: iDNS RASI Policy](https://img.shields.io/badge/PDF-PhilPapers-blue.svg)](https://philpapers.org/archive/CAMIIA-3.pdf)
 
 Abstract
 We introduce iDNS, a deterministic spectral-temporal algorithmic solver that stabilizes direct numerical simulation of incompressible Navier–Stokes by lifting the Fourier–Galerkin weak solution to a uniformly sampled computational manifold. Instead of advancing the flow on physical time t, the method evolves the solution curve in a latent parameter τ through a diffeomorphic map t = φ(τ), with φ'(τ) set by a sigmoid policy that concentrates sampling where geometric curvature is high. An intelligent adaptive policy
@@ -258,25 +259,27 @@ This software is provided for scientific and academic reproducibility. Commercia
 
 ⭐ 📚 Citation Block (3 Papers — For README / GitHub / Papers)
 
-2. iDNS: Intelligent Regularity-Adaptive Spectral Integration (RASI) Policy for Deterministic Flow Dynamics (forthcoming arXiv)
+1. iDNS: Intelligent Regularity-Adaptive Spectral Integration (RASI) Policy for Deterministic Flow Dynamics (forthcoming arXiv)
 
 Jeffrey Camlin (2025)
 Published: 27 November 2025
 PhilPapers ID: CAMIIA-3
 ORCID: 0000-0002-5740-4204
-➡️ https://philpapers.org/archive/CAMIIA-3.pdf
+➡️ [![Paper: iDNS RASI Policy](https://img.shields.io/badge/PDF-PhilPapers-blue.svg)](https://philpapers.org/archive/CAMIIA-3.pdf)
+
 
 iDNS (RASI Policy) provides a deterministic spectral–temporal integration method capable of evolving high–Reynolds number flows with globally smooth lifted trajectories. The method merges spectral continuation, temporal lifting, and stability-aware timestep negotiation to produce Reynolds-invariant computational cost for stiff fluid systems.
 
 Theory Papers
 
-1. Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow Models in AI Systems
+2. Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow Models in AI Systems
 
 Jeffrey Camlin (2025)
 arXiv preprint arXiv:2510.09805
 Published: 10 October 2025
 ORCID: 0000-0002-5740-4204
-➡️ https://arxiv.org/abs/2510.09805
+➡️[![Paper: Temporal Lifting](https://img.shields.io/badge/PDF-arXiv%3A2510.09805-red.svg)](https://arxiv.org/abs/2510.09805)
+
 
 Temporal lifting introduces a smooth, monotone reparametrization of time that regularizes stiff flows while preserving conservation laws. In the lifted coordinate, trajectories of systems such as incompressible Navier–Stokes on T3
  become globally smooth. For AI systems, temporal lifting acts as continuous-time normalization for PINNs, neural ODEs, and latent-flow architectures, stabilizing turbulent or near-singular evolution.
@@ -287,7 +290,8 @@ Jeffrey Camlin (2025)
 Red Dawn Academic Press, Milwaukee, WI
 Publication Date: 2025
 ORCID: 0000-0002-5740-4204
-➡️ https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html
+➡️ [![Paper: SpectralTemporal-NS](https://img.shields.io/badge/Article-Red%20Dawn%20Press-purple.svg)](https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-010a.html)
+
 
 This paper introduces a neural-inspired spectral–temporal continuation method for the incompressible Navier–Stokes equations on the torus. By combining lifted-time operators with adaptive spectral filtering, the solver achieves smooth global trajectories even at extreme Reynolds numbers. The method bridges analytic fluid regularity theory with continuous-time machine learning architectures and PINN-style latent dynamics.
 
