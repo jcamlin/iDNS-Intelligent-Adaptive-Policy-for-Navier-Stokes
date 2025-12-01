@@ -190,20 +190,6 @@ python idns_v1_public_tg.py
 
 # Run Kolmogorov benchmark (takes ~22 minutes at Re=10⁴)
 python idns_v1_public_kolmogorov.py
-```
-
-Example: Run at Re = 10⁸ (Kolmogorov) so Run with dt = 0.006, t_end = 100, Re = 1e8
-
-In the code config se your resolution:
-N = 1024
-
-Then command line with parameters:
-
-python idns_v1_public_kolmogorov.py --mode idns --Re 1e8 --t_end 100
-
-There will be console updates you can watch at every step with various info. 
-
-Results are saved to `./results/` by default.
 
 ---
 
@@ -223,6 +209,112 @@ No GPU required. No parallelization required. Runs on consumer hardware.
 <p align="center">
   <img src="https://[i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-5.png](https://reddawnacademicpress.org/idns-ad-hoc-page/)?w=681&ssl=1" alt="iDNS Taylor-Green Vortex" width="700">
 </p>
+
+## Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/reddawnacademicpress/iDNS.git
+cd iDNS
+
+# Run Taylor-Green benchmark (takes ~80 hours at Re=10⁵ on laptop)
+python idns_v1_public_tg.py
+
+# Run Kolmogorov benchmark (takes ~22 minutes at Re=10⁴)
+python idns_v1_public_kolmogorov.py
+```
+
+Example: Run at Re = 10⁸ (Kolmogorov) with dt = 0.006, t_end = 100, Re = 1e8.
+
+In the code config set your resolution:
+N = 1024
+
+Then command line with parameters:
+
+```bash
+python idns_v1_public_kolmogorov.py --mode idns --Re 1e8 --t_end 100
+```
+
+There will be console updates you can watch at every step with various info.
+
+Results are saved to `./results/` by default.
+
+---
+
+## Kolmogorov Flow Parameters
+
+```python
+@dataclass
+class Config:
+    N: int = 256              # Grid resolution (N×N modes)
+    L: float = 2 * np.pi      # Domain size
+    Re: float = 20_000.0      # Reynolds number
+    T_final: float = 100.0    # Integration time
+    dt_base: float = 6e-3     # Base timestep (τ units)
+
+    # Forcing
+    F: float = 1.0            # Forcing amplitude
+    kf: int = 4               # Forcing wavenumber
+
+    # Temporal lift controller
+    lift_A: float = 1.0       # Sigmoid amplitude
+    lift_k: float = 12.0      # Sigmoid steepness
+    lift_center: float = 0.6  # Activation threshold
+
+    # Output
+    out_dir: str = "results"
+    print_every: int = 100
+```
+
+### What to adjust:
+
+- **Re** — Set your target Reynolds number  
+- **N** — Increase for higher Re (256 for 10⁴–10⁶, 512 for 10⁷, 1024 for 10⁸)  
+- **T_final** — Integration duration  
+- **dt_base** — normally **0.006**, decrease if instability (rare)
+
+---
+
+## Taylor–Green Parameters
+
+```python
+@dataclass
+class Config:
+    N: int = 128              # Grid resolution (N³ modes)
+    L: float = 2 * np.pi      # Domain size
+    Re: float = 100_000.0     # Reynolds number
+    T_final: float = 5.0      # Integration time
+    dt_base: float = 1e-4     # Base timestep (τ units)
+
+    # Temporal lift controller
+    lift_A: float = 1.0       # Sigmoid amplitude
+    lift_k: float = 12.0      # Sigmoid steepness
+    lift_center: float = 0.6  # Activation threshold
+
+    # Output
+    out_dir: str = "results"
+    print_every: int = 100
+```
+
+### What to adjust:
+
+- **Re** — validated at 10⁵  
+- **N** — 128³ ≈ 1.5GB RAM; 256³ ≈ 12GB RAM  
+- **T_final** — t = 5 captures full cascade at Re = 10⁵  
+
+---
+
+## Temporal Lift Controller (All Solvers)
+
+The sigmoid parameters control adaptive timestepping:
+
+| Parameter     | Default | Effect |
+|---------------|---------|--------|
+| lift_A        | 1.0     | Max lift factor (φ' ranges 1 → 1+A) |
+| lift_k        | 12.0    | Steepness of activation |
+| lift_center   | 0.6     | Stiffness threshold for activation |
+
+Leave these at defaults unless you're experimenting. They've been validated across all benchmark regimes.
 
 
 ## Citation
@@ -254,6 +346,12 @@ This software is provided for scientific and academic reproducibility. Commercia
 ## 🔹 Reference Papers (Theory, Math, and Computer Science)
 
 ---
+
+If the whole block suddenly becomes normal text →  
+**YES, the issue was a missing closing fence BEFORE this section.**
+
+---
+
 
 ## 🔹 Citation
 
