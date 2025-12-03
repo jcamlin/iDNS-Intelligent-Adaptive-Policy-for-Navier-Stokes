@@ -367,6 +367,18 @@ iDNS (RASI Policy) provides a deterministic spectral–temporal integration meth
 
 Theory Papers
 
+2.  Global Regularity for Navier–Stokes on T³ via Bounded Vorticity–Response Functionals
+Author: Jeffrey Camlin
+DOI: 10.63968/post-bio-ai-epistemics.v1n2.012 
+Published: 1 December 2025
+➡️[![Paper:] ((https://recursion-intelligence.org/post-bio-ai-epistemics-v1n2-012.html))
+
+We prove global regularity for the incompressible Navier–Stokes equations on T³ by constructing a bounded vorticity-response functional Φ : ℝ≥0 → [φ_min, φ_max] that defines a temporal lifting generalizing Sundman's regularization from celestial mechanics. Uniform-in-N bounds on Galerkin approximations combined with coordinate invariance of the Beale–Kato–Majda integral establish finiteness of ∫₀ᵀ ‖ω‖_L∞ dt for all T > 0; the BKM contrapositive then yields global classical solutions u ∈ C^∞(T³ × [0,∞)) that coincide with Leray–Hopf weak solutions by weak-strong uniqueness. This resolves Fefferman's Clay Millennium Problem Statement (B), with numerical validation via iDNS confirming the framework at Reynolds numbers up to 10⁸.
+
+
+
+
+
 2. Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow Models in AI Systems
 
 Jeffrey Camlin (2025)
