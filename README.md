@@ -1,10 +1,12 @@
 # iDNS — Intelligent Direct Numerical Simulation
 
-<p align="center">
-  <img src="https://i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-63.png?w=913&ssl=1" alt="iDNS Taylor-Green Vortex" width="700">
-</p>
+Adaptive integration framework for extreme-stiffness dynamical systems via temporal lifting. Verified true DNS (Rε = 1.000) where conventional methods exhibit significant numerical dissipation.
 
-Adaptive integration framework for extreme-stiffness dynamical systems via temporal lifting. Achieves true DNS (Rε = 1.000) where conventional methods exhibit significant numerical dissipation.
+Depending on resolution ratio R = N/(1.6√Re), the method operates as:
+- **Spectral DNS** (R ≥ 1): All dynamically active scales resolved; dissipation purely viscous
+- **DNS-Coarse** (R < 1): Exact Galerkin truncation; large and medium-scale structures captured with precision while sub-Kolmogorov scales are truncated by spectral projection rather than artificial dissipation
+
+Unlike LES or SGS methods, DNS-Coarse introduces no modeled dissipation — retained modes (k ≪ kmax) evolve under exact Navier-Stokes dynamics. Energy exits at the truncation boundary, not through numerical damping.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17730872.svg)](https://doi.org/10.5281/zenodo.17730872)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
