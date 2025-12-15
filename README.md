@@ -1,24 +1,19 @@
 # iDNS — Intelligent Direct Numerical Simulation
 
-Adaptive integration framework for extreme-stiffness dynamical systems via temporal lifting. Achieves true DNS (R_ε = 1.000) where conventional methods exhibit significant numerical dissipation.
+<p align="center">
+  <img src="https://i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-63.png?w=913&ssl=1" alt="iDNS Taylor-Green Vortex" width="700">
+</p>
 
-**Version:** 10.0.0  
+Adaptive integration framework for extreme-stiffness dynamical systems via temporal lifting. Achieves true DNS (Rε = 1.000) where conventional methods exhibit significant numerical dissipation.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17730872.svg)](https://doi.org/10.5281/zenodo.17730872)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+**Version:** 2.0.0  
 **Author:** Jeffrey Camlin  
-**ORCID:** 0000-0002-5740-4204  
-**License:** CC BY-NC 4.0  
-**DOI:** 10.5281/zenodo.17730873
-
----
-
-# iDNS — Intelligent Adaptive Policy Solver for Navier–Stokes
-[![DOI](https://zenodo.org/badge/1089748208.svg)](https://doi.org/10.5281/zenodo.17730872) 
-
-#iDNS Minimal Kolmogorov / Taylor-Green Flow Solver — Public Release
-# ----------------------------------------------------
-# Author: Jeffrey Camlin
- © 2025 Red Dawn Academic Press & AI Lab, Milwaukee WI
- License: CC BY-NC 4.0 (Attribution–NonCommercial)
- https://creativecommons.org/licenses/by-nc/4.0/
+**ORCID:** [0000-0002-5740-4204](https://orcid.org/0000-0002-5740-4204)  
+**Date:** 14 December 2025  
+**Organization:** Red Dawn Academic Press & AI Lab, Milwaukee WI
 
 <p align="center">
   <img src="https://i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-63.png?w=913&ssl=1" alt="iDNS Taylor-Green Vortex" width="700">
