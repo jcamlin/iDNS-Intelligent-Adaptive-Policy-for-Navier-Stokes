@@ -1,6 +1,6 @@
 # iDNS — Intelligent Direct Numerical Simulation
 
-Adaptive integration framework for extreme-stiffness dynamical systems via temporal lifting. Verified true DNS (Rε = 1.000) where conventional methods exhibit significant numerical dissipation.
+Adaptive integration policy for extreme-stiffness dynamical systems via temporal lifting. Verified true DNS (Rε = 1.000) where conventional methods exhibit significant numerical dissipation.
 
 Depending on resolution ratio R = N/(1.6√Re), the method operates as:
 - **Spectral DNS** (R ≥ 1): All dynamically active scales resolved; dissipation purely viscous
