@@ -1,0 +1,52 @@
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Copyright (c) 2025 Jeffrey Camlin, Red Dawn Academic Press & AI Lab
+
+You are free to:
+- Share: copy and redistribute the material in any medium or format
+- Adapt: remix, transform, and build upon the material
+
+For educational, scientific, and non-commercial purposes.
+
+Under the following terms:
+- Attribution: You must give appropriate credit
+- NonCommercial: You may not use the material for commercial purposes
+
+Full license: https://creativecommons.org/licenses/by-nc/4.0/
+
+---
+
+CITATION
+
+If you use this software in your research, please cite:
+
+@article{Camlin2025iDNS,
+  author  = {Camlin, Jeffrey},
+  title   = {iDNS: A State-Dependent Temporal Policy for Extreme-Stiffness Dynamical Systems, with Application to the 3-D Taylor--Green Vortex at Re = 10^5 and Re = 10^8},
+  year    = {2025},
+  note    = {arXiv preprint (pending), cs.AI},
+  doi     = {10.5281/zenodo.17730872},
+  url     = {https://github.com/RED-DAWN-AI/iDNS-Intelligent-Adaptive-Policy-for-Navier-Stokes}
+}
+
+Related theoretical foundations:
+
+@article{Camlin2025GlobalReg,
+  author  = {Camlin, Jeffrey},
+  title   = {Global Regularity for Navier--Stokes on T^3 via Bounded Vorticity--Response Functionals},
+  journal = {The Scholarly Journal of Post-Biological Epistemics},
+  year    = {2025},
+  volume  = {1},
+  number  = {2},
+  pages   = {1--14},
+  doi     = {10.63968/post-bio-ai-epistemics.v1n2.012}
+}
+
+@online{Camlin2025Temporal,
+  author  = {Camlin, Jeffrey},
+  title   = {Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow Models in AI Systems},
+  year    = {2025},
+  eprint  = {2510.09805},
+  url     = {https://arxiv.org/abs/2510.09805},
+  doi     = {10.48550/arXiv.2510.09805}
+}
