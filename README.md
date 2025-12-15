@@ -62,7 +62,7 @@ The resolution ratio R = N/(1.6√Re) determines the operating regime:
 - **R ≥ 1 (Spectral DNS):** All scales resolved; dissipation purely viscous
 - **R < 1 (DNS-Coarse):** Exact Galerkin truncation; large/medium structures preserved, sub-Kolmogorov modes truncated — no artificial dissipation
 
-For Taylor-Green, true DNS threshold is approximately N = 512³ at Re = 10⁵, (see idns-resolution-ratio-chart.pdf in charts-and-visulas)
+For Taylor-Green, true DNS threshold is approximately N = 512³ at Re = 10⁵, (see idns-resolution-ratio-chart.pdf in charts-and-visuals)
 
 ### Parameters
 
