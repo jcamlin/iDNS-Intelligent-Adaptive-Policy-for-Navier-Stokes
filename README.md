@@ -24,6 +24,33 @@ Adaptive integration framework for extreme-stiffness dynamical systems via tempo
   <img src="https://i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-63.png?w=913&ssl=1" alt="iDNS Taylor-Green Vortex" width="700">
 </p>
 
+## Repository Structure
+```
+iDNS/
+├── LICENSE
+├── README.md
+├── 1_solvers/
+│   ├── idns_v10_taylor_green_public.py    # 3D Taylor-Green vortex
+│   └── idns_v10_kolmogorov_public.py      # 2D Kolmogorov flow
+├── 2_utilities/
+│   ├── idns_visualizer_v2.py              # Snapshot visualization
+│   ├── extract_spectrum.py                 # Energy spectrum extraction
+│   └── npz_inspect.py                      # Snapshot inspection
+├── 3_data/
+│   ├── taylor-green-10-5-data.zip
+│   ├── taylor-green-10-8-data.zip
+│   ├── idns-nasa-debonis_validation.zip
+│   ├── kolmogorov-validation-chandler-kerswell.zip
+│   ├── kolmogorov-invariance.zip
+│   └── idns-Kolmogorov Flow-xtreme-N512_Re100000000.zip
+└── 4_charts-and-visuals/
+    ├── TGV_Re10-5_diagnostics.pdf
+    ├── TGV_Re10-8_4panel_XZ_t5-N512.png
+    ├── TGV_Re10-8_N512_3planes_t5.png
+    ├── bkm-taylor-green-10-5-and10-8.pdf
+    ├── energy-spectra-taylor-green-10-5-and-10-8.pdf
+    └── ...
+```
 
 ## idns_v10_taylor_green.py
 
