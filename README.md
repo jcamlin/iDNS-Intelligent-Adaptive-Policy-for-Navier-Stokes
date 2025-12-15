@@ -21,7 +21,7 @@ Adaptive integration framework for extreme-stiffness dynamical systems via tempo
  https://creativecommons.org/licenses/by-nc/4.0/
 
 <p align="center">
-  <img src="[[https://i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-5.png?w=681&ssl=1" alt="iDNS Taylor-Green Vortex](https://i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-63.png?w=913&ssl=1)](https://i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-63.png?w=913&ssl=1)" width="700">
+  <img src="https://i0.wp.com/reddawnacademicpress.org/wp-content/uploads/2025/11/teaser-63.png?w=913&ssl=1" alt="iDNS Taylor-Green Vortex" width="700">
 </p>
 
 
