@@ -6,7 +6,7 @@ Depending on resolution ratio R = N/(1.6√Re), the method operates as:
 - **Spectral DNS** (R ≥ 1): All dynamically active scales resolved; dissipation purely viscous
 - **DNS-Coarse** (R < 1): Exact Galerkin truncation; large and medium-scale structures captured with precision while sub-Kolmogorov scales are truncated by spectral projection rather than artificial dissipation
 
-Unlike LES or SGS methods, DNS-Coarse introduces no modeled dissipation — retained modes (k ≪ kmax) evolve under exact Navier-Stokes dynamics. Energy exits at the truncation boundary, not through numerical damping.
+Unlike LES or SGS methods, DNS-Coarse introduces no modeled dissipation — retained modes (k ≪ kmax) evolve under exact Navier-Stokes dynamics. Energy exits at the truncation boundary, not through numerical damping. Adaptive integration framework for extreme-stiffness dynamical systems via temporal lifting. Verified true DNS (Rε = 1.000) where conventional methods exhibit significant numerical dissipation. At under-resolved grids (R < 1), operates as DNS-Coarse: exact Galerkin truncation preserving large and medium-scale structures while sub-Kolmogorov modes exit via spectral projection — no artificial dissipation, no subgrid models. Validated against NASA Glenn WRLES (DeBonis, 2013) and spectral DNS benchmarks (Chandler & Kerswell, 2013).
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17730872.svg)](https://doi.org/10.5281/zenodo.17730872)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
