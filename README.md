@@ -10,6 +10,7 @@ Unlike LES or SGS methods, DNS-Coarse introduces no modeled dissipation — reta
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17730872.svg)](https://doi.org/10.5281/zenodo.17730872)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+Mathematics proof and LEAN verification uploaded for temporal lifting, see zip file "NavierStokes-GlobalRegularity-Lean4.zip" and includes readme how to verify. 
 
 **Version:** 2.0.0  
 **Author:** Jeffrey Camlin  
